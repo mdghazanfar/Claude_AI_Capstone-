@@ -1,0 +1,139 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "username": "admin_alice",
+      "role": "ADMIN",
+      "email": "alice@learnlab.dummy"
+    },
+    {
+      "id": "u2",
+      "username": "instructor_bob",
+      "role": "INSTRUCTOR",
+      "email": "bob@learnlab.dummy"
+    },
+    {
+      "id": "u2b",
+      "username": "instructor_eve",
+      "role": "INSTRUCTOR",
+      "email": "eve@learnlab.dummy"
+    },
+    {
+      "id": "u3",
+      "username": "learner_charlie",
+      "role": "LEARNER",
+      "email": "charlie@learnlab.dummy"
+    },
+    {
+      "id": "u4",
+      "username": "learner_diana",
+      "role": "LEARNER",
+      "email": "diana@learnlab.dummy"
+    }
+  ],
+  "courses": [
+    {
+      "id": "c1",
+      "title": "Introduction to AI Engineering",
+      "description": "Learn the basics of AI-Native engineering and agent workflows.",
+      "category": "Technology",
+      "difficulty": "Beginner",
+      "instructor_id": "u2",
+      "state": "PUBLISHED",
+      "modules": [
+        {
+          "id": "m1",
+          "title": "Module 1: Foundations",
+          "order": 1,
+          "lessons": [
+            {
+              "id": "l1",
+              "title": "What is AI-Native?",
+              "content": "Content covering AI-Native concepts...",
+              "order": 1
+            },
+            {
+              "id": "l2",
+              "title": "Agentic Workflows",
+              "content": "How agents operate in a loop...",
+              "order": 2
+            }
+          ],
+          "quiz": {
+            "id": "q1",
+            "title": "Foundations Quiz",
+            "questions": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "title": "Advanced Playwright Automation",
+      "description": "Master UI automation with Playwright. Go from zero to hero.",
+      "category": "Testing",
+      "difficulty": "Advanced",
+      "instructor_id": "u2",
+      "state": "DRAFT",
+      "modules": []
+    },
+    {
+      "id": "c3",
+      "title": "System Architecture for Agents",
+      "description": "Learn how to build scalable AI systems using microservices.",
+      "category": "Architecture",
+      "difficulty": "Intermediate",
+      "instructor_id": "u2",
+      "state": "PUBLISHED",
+      "modules": []
+    },
+    {
+      "id": "c4",
+      "title": "Data Engineering 101",
+      "description": "Introduction to pipelines, ETL, and data modeling.",
+      "category": "Data Science",
+      "difficulty": "Beginner",
+      "instructor_id": "u2b",
+      "state": "PUBLISHED",
+      "modules": []
+    },
+    {
+      "id": "c5",
+      "title": "Legacy Systems Refactoring",
+      "description": "How to refactor legacy monolithic applications safely.",
+      "category": "Software Engineering",
+      "difficulty": "Advanced",
+      "instructor_id": "u2",
+      "state": "ARCHIVED",
+      "modules": []
+    }
+  ],
+  "enrollments": [
+    {
+      "id": "e1",
+      "learner_id": "u3",
+      "course_id": "c1",
+      "enrollment_date": "2026-09-01T10:00:00Z",
+      "completed_lessons": [
+        "l1"
+      ],
+      "quiz_attempts": []
+    },
+    {
+      "id": "e2",
+      "learner_id": "u3",
+      "course_id": "c4",
+      "enrollment_date": "2026-09-02T15:30:00Z",
+      "completed_lessons": [],
+      "quiz_attempts": []
+    },
+    {
+      "id": "e3",
+      "learner_id": "u3",
+      "course_id": "c3",
+      "enrollment_date": "2026-09-03T18:00:00Z",
+      "completed_lessons": [],
+      "quiz_attempts": []
+    }
+  ]
+}

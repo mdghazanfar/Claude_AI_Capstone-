@@ -1,0 +1,11 @@
+[importlinter]
+root_package = src
+
+[importlinter:contract:layer_enforcement]
+name = Enforce layers
+type = layers
+layers =
+    src.controllers
+    src.services
+    src.repositories
+    src.domain
